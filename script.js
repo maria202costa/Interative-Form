@@ -1,11 +1,7 @@
 const emailInput = document.querySelector(".email-input");
 const form = document.querySelector(".form");
-const buttonSubmit = document.getElementById("button-submit");
 const divMessage = document.querySelector(".small-texts");
-const mainPage = document.querySelector(".form-container");
-const successPage = document.querySelector(".success-submit");
-const emailDetail = document.querySelector(".container"); //
-const closeBtn = document.querySelector("close-btn"); //
+const buttonSubmit = document.getElementById("button-submit");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -26,18 +22,12 @@ form.addEventListener("submit", (e) => {
       emailInput.classList.add("email-input");
       emailInput.classList.remove("error");
     }, 3000);
+  } else {
+    buttonSubmit.addEventListener("click", () => {
+      window.location.href = "./SuccessPage/success.html";
+    });
   }
-
-  buttonSubmit.addEventListener("click", function switchPage() {
-    mainPage.classList.add("hidden");
-    successPage.classList.remove("hidden");
-  });
 });
-
-function buttonSuccess() {
-  successPage.classList.add("hidden");
-  mainPage.classList.remove("hidden");
-}
 
 //to validate the email format:
 function isEmailValid(email) {
