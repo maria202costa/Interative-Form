@@ -5,16 +5,13 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 ## Table of contents
 
 - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
 
 ### Links
 
-- Solution URL: [GitHub Page](https://your-solution-url.com)
-- Live Site URL: [Live Site URL](https://your-live-site-url.com)
-
-## My process
+- Solution URL: [GitHub Page](https://github.com/maria202costa)
+- Live Site URL: [Live Site URL](https://interative-form.vercel.app/)
 
 ### Built with
 
@@ -22,6 +19,7 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 - CSS custom properties
 - Flexbox
 - JavaScript interative code
+- Media Queries
 
 ## Author
 
