@@ -130,3 +130,139 @@ small {
 .div-image {
   margin: 15px 15px 15px 0;
 }
+
+.div-image-small {
+  display: none;
+}
+
+/*Mobile Version(375px and 320px)*/
+@media (max-width: 376px) {
+  body {
+    width: 375px;
+    height: 800px;
+    box-sizing: border-box;
+    background-color: hsl(234, 29%, 20%);
+  }
+  .div-image {
+    display: none;
+  }
+  .div-image-small {
+    display: flex;
+    width: 375px;
+    height: 300px;
+
+    & img {
+      width: 100%;
+      height: fit-content;
+    }
+  }
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    border-radius: 0px;
+  }
+  .div-form {
+    width: 375px;
+    height: fit-content;
+    margin: 0;
+
+    & h1 {
+      font-size: 2.2rem;
+      margin: 25px 25px 20px 25px;
+    }
+    & p {
+      margin-top: 0;
+      font-size: 1rem;
+      margin-left: 25px;
+    }
+  }
+  .list-updates {
+    margin-left: 25px;
+    margin-right: 25px;
+
+    & .list-items {
+      gap: 10px;
+      font-size: 1rem;
+    }
+  }
+  .small-texts {
+    margin: 0px 25px 0px 25px;
+  }
+  .form {
+    margin: 0px 25px 0px 25px;
+    gap: 15px;
+    margin-top: 15px;
+
+    & .email-input,
+    #button-submit {
+      height: 50px;
+      font-size: 1rem;
+    }
+  }
+}
+
+/*2nd Mobile Version(425px)*/
+@media (max-width: 426px) {
+  body {
+    width: 425px;
+    height: 850px;
+    background-color: hsl(0, 0%, 100%);
+  }
+  .div-image {
+    display: none;
+  }
+  .div-image-small {
+    display: flex;
+    width: 425px;
+    height: 300px;
+
+    & img {
+      width: 100%;
+      height: fit-content;
+    }
+  }
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    border-radius: 0px;
+  }
+  .div-form {
+    width: 425px;
+    height: 500px;
+    margin: 0;
+
+    & h1 {
+      font-size: 2.5rem;
+      margin: 50px 25px 20px 25px;
+    }
+
+    & p {
+      font-size: 1.2rem;
+      margin: 0px 25px 10px 25px;
+    }
+  }
+  .list-updates {
+    margin-left: 25px;
+    margin-right: 25px;
+
+    & .list-items {
+      gap: 10px;
+      font-size: 1.2rem;
+    }
+  }
+  .small-texts {
+    margin: 0px 25px 0px 25px;
+  }
+  .form {
+    margin: 15px 25px 0px 25px;
+    gap: 15px;
+
+    & .email-input,
+    #button-sumit {
+      height: 55px;
+      font-size: 1.2rem;
+    }
+  }
+}
